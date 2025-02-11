@@ -1,40 +1,68 @@
  body {
-     background-color: rgb(146, 208, 255);
+  background-image: linear-gradient(rgb(108, 210, 227), rgb(85, 165, 175));
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
+
   }
 
   button{
 
-position: center;
-color:rgb(255, 255, 255);
-background-color:aqua;
-font-size: 25;
-text-align: center;
+    appearance: none;
+    border:none;
+    cursor: pointer;
+    position: center;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+   
 
+    background-image: linear-gradient(to right, rgb(201, 26 ,9) 50%, rgb(179, 16 , 4) 50%);
+    background-size: 200% 100%;
+    transition: 0.3s ease-out;
+
+    width:20vw;
   } 
+
+  .InformationButtons{
+  display: flex;
+  gap: 5vw;
+  justify-content: spa;
+  }
+  button:hover{
+    background-position: right;
+  }
   
   #removeBlocks{
     z-index: 10;
   }
+
   h1 {
      color: rgb(255, 255, 255);
-     text-align:center;
-    width: 300;
-    height: 120;
-    font-size: 100;
+     text-align: center;
+    width: 200px;
+    height: 100px;
+    font-size: 80px;
   
     
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 3px black;
    
     border: 2px solid rgb(0, 0, 0);
-    background-color: #ff0000; 
+    background-color: rgb(255, 21, 0); 
+    border-radius: 10px;
   } 
   
+  img{
+    max-width:100%;
+    z-index: 1;
+    max-width: 20%;
+max-height: 20%
+  }
+
   .hide {
     display: none;
   }

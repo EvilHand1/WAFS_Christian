@@ -17,7 +17,7 @@ function Leerdoel2(){
 
 function myFunction() {
     var showInformation = document.getElementById("AllButtons");
-    showInformation.hidden = true;
+    showInformation.classList.add("hide")
 
     createBlocks();
     var myInformation = document.getElementById("WhoAmIText");
@@ -28,6 +28,8 @@ function myFunction() {
     var removeBlocksButton = document.getElementById("removeBlocks");
     removeBlocksButton.classList.remove("hide");
     removeBlocksButton.hidden = false;
+
+    
   }
 
 let blockTimeouts = [];
@@ -71,7 +73,7 @@ function createBlocks() {
 
       
       var showInformation = document.getElementById("AllButtons");
-      showInformation.hidden = false;
+      showInformation.classList.remove("hide")
 
       var removeBlocksButton = document.getElementById("removeBlocks");
       removeBlocksButton.hidden = true;
