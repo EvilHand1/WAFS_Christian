@@ -10,13 +10,17 @@
 
   button{
 
-position: relative;
+position: center;
 color:rgb(255, 255, 255);
 background-color:aqua;
 font-size: 25;
+text-align: center;
 
   } 
   
+  #removeBlocks{
+    z-index: 10;
+  }
   h1 {
      color: rgb(255, 255, 255);
      text-align:center;
@@ -30,43 +34,36 @@ font-size: 25;
     border: 2px solid rgb(0, 0, 0);
     background-color: #ff0000; 
   } 
-  /* div {
-    width: auto;
-    border: 50px solid rgb(217, 255, 0);
-  } */
-  /* h2 {
+  
+  .hide {
+    display: none;
+  }
 
-    color:rgb(255, 255, 255);
+  #WhoAmIText {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+    font-size: 18px;
+    color: #000000;
     margin: auto;
     text-align: center;
     max-width: 50%;
     min-width: 30%;	
     
     border: 2px solid rgb(0, 0, 0);
-    background-color: #577dac; 
-  } */
-  /* .container {
-    position: relative;
-    text-align: center;
-    color: white;
-  } */
-  /* .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
-   font-size: 50;
-   
-  } */
+    background-color: #70c1fe; 
+  }
 
-  /* body {
-    margin: 0;
-    overflow: hidden;
-    background-color: #f0f0f0;
-    position: relative;
-  } */
-  
+  #block-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
   .block {
     position: absolute;
     width: 100px;

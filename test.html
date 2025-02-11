@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,18 @@
 <body>
     <h1>LEGO</h1>
     <script src="ButtonTest.js"></script>
-    <button id="myButton" onclick="myFunction()">set 0 <br> Help</button>
+    <div class="InformationButtons" id="AllButtons">
+        <button id="myButton" onclick="MyInformation()">set 0 <br> Help</button>
+        <button id="myButton2" onclick="Leerdoel1()">set 1 <br> kiip</button>
+        <button id="myButton3" onclick="Leerdoel2()">set 2 <br> bob</button>
+    </div>
+    
+    <button id="removeBlocks" onclick="removeBlocks()" class = "hide">Remove Blocks</button>
+    <div id="WhoAmIText" class = "hide">
+        <p>blablabla</p>
+      </div>
+    
+      <div id="block-container"></div>
+    
 </body>
 </html>
