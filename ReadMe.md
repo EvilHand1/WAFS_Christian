@@ -12,3 +12,5 @@ adding brick class when pressing on button
 https://www.w3schools.com/howto/howto_js_add_class.asp
 
 https://www.youtube.com/watch?v=m4NUID4kDyo
+
+https://www.geeksforgeeks.org/how-to-delay-a-javascript-function-call-using-javascript/

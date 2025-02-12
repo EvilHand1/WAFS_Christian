@@ -7,19 +7,21 @@
   height: 100vh;
   width: 100vw;
   font-family: "Gill Sans", sans-serif;
+  overflow: hidden;
   }
 
   button{
-    padding: 1em;
-    
     appearance: none;
     border:none;
     cursor: pointer;
     position: center;
     font-size: 30px;
     font-weight: 600;
-    border-radius: 25px;
+    border-radius: 10px;
    
+    /* source: https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    /* source: https://www.youtube.com/watch?v=m4NUID4kDyo */
     background-image: linear-gradient(to right, rgb(201, 26 ,9) 50%, rgb(193, 223, 240) 50%);
     background-size: 200% 100%;
     transition: 0.3s ease-out;
@@ -136,7 +138,7 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    background: #8EC641;
+    background: rgb(201,26,9);
     
     box-sizing: border-box;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25), 
@@ -157,29 +159,62 @@
                 inset 2px 2px 4px 1px rgba(255, 255, 255, 0.25);
   }
 
- /* #fallingBricks{
+  /* Matthijs heeft me geholpen en uitgelegd hoe de animaties werken */
+ #fallingBricks{
   z-index: -1;
   list-style: none;
-
+  overflow-y: clip;
+  overflow-x:clip;
  }
 
  .animate{
-  animation: fallingBricks 5s infinite;
-  top: 0;
-  left: 0;
+  animation: fallingBricks1 5s linear;
+  top: -60vh;
+  left: 50vw;
+  overflow-y: clip;
+  overflow-x: clip;
  }
 
- @keyframes fallingBricks{
+ @keyframes fallingBricks1{
   0% {
-    translate: 0 -60vh;
+    top: -60vh;
     transform: rotate(0deg);
   }
   100% {
-    translate: 0 100vh;
-    transform: rotate(280deg);
+    top: 100vh;
+    transform: rotate(720deg);
   }
  }
 
- #falling1{
-  left: 50vw;
- } */
+ @keyframes fallingBricks2{
+  0% {
+    top: -60vh;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 100vh;
+    transform: rotate(-720deg);
+  }
+ }
+
+ @keyframes fallingBricks3{
+  0% {
+    top: -60vh;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 100vh;
+    transform: rotate(-1440deg);
+  }
+}
+
+  @keyframes fallingBricks4{
+    0% {
+      top: -60vh;
+      transform: rotate(0deg);
+    }
+    100% {
+      top: 100vh;
+      transform: rotate(1440deg);
+    }
+ }
