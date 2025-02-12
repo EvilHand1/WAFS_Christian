@@ -10,7 +10,7 @@ const informationBox = document.getElementById("Informationtextbox");
 const allButtons = document.getElementById("AllButtons");
 
 function MyInformation(){
-  myInformation.innerHTML = "Hallo, mijn naam is " + lookForMyData.data[0].name + " maar je kunt me ook " + lookForMyData.data[0].nickname + " noemen. Ik ben geboren op " + lookForMyData.data[0].birthdate + ". Ik ben een derde jaars gamedevelopment student en heb voornamelijk ervaring met C# en Unity. Ik gebruik nog ouderwetse emojis zoals " + lookForMyData.data[0].fav_emoji + " omdat ik die leuker vind.";
+  myInformation.innerHTML = "Hallo, mijn naam is " + lookForMyData.data[0].name + " maar je mag me ook " + lookForMyData.data[0].nickname + " noemen. Ik ben geboren op " + lookForMyData.data[0].birthdate + ". Ik ben een derde jaars gamedevelopment student en heb voornamelijk ervaring met C# en Unity. Ik gebruik nog ouderwetse emojis zoals " + lookForMyData.data[0].fav_emoji + " omdat ik die leuker vind.";
   myInformationTitle.innerHTML = "Wie ben ik?"
  createBlocks();
 }
