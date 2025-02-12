@@ -1,17 +1,15 @@
  body {
   background-image: linear-gradient(rgb(108, 210, 227), rgb(85, 165, 175));
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100vw;
-
+  font-family: "Gill Sans", sans-serif;
   }
 
   button{
-
     appearance: none;
     border:none;
     cursor: pointer;
@@ -20,12 +18,9 @@
     font-weight: 600;
     border-radius: 5px;
    
-
-    background-image: linear-gradient(to right, rgb(201, 26 ,9) 50%, rgb(179, 16 , 4) 50%);
+    background-image: linear-gradient(to right, rgb(201, 26 ,9) 50%, rgb(193, 223, 240) 50%);
     background-size: 200% 100%;
     transition: 0.3s ease-out;
-
-    min-width: 20vw;
   } 
 
   .InformationButtons{
@@ -56,7 +51,7 @@
     border-radius: 10px;
   } 
 
-  h2{
+  #header2{
     margin-top: -40px;
     color: rgb(255, 255, 255);
      text-align: center;
@@ -82,19 +77,45 @@
     display: none;
   }
 
-  #WhoAmIText {
-    position: relative;
+  #Informationtextbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: 10;
+    margin-top: 40px;
+    max-width: 30em;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #70c1fe; 
+  }
+  #Informationtextbox.hide {
+    display: none;
+  }
+  
+#informationTitle{
+  align-self: center;
+  border-radius: 5px;
+  font-size: 30px;
+  color: #000000;
+  margin: 10px;
+  text-align: center;
+  max-width: 55%; 
+  min-width: 30%;	
+    	
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(174, 239, 236); 
+    padding: 0px;
+}
+  #informationContent {
+    margin: 10px;
+    position: relative;
+   
     padding: 20px;
     font-size: 18px;
     color: #000000;
     margin: auto;
-    text-align: center;
-    max-width: 50%;
-    min-width: 30%;	
-    
-    border: 2px solid rgb(0, 0, 0);
-    background-color: #70c1fe; 
+    text-align: left;
+   
   }
 
 
