@@ -32,7 +32,16 @@ function RevealText() {
   removeBlocksButton.classList.remove("hide");
 }
 
-  
+const colors = [
+  "rgb(0,85,191)",    
+  "rgb(35,120,65)",    
+  "rgb(0,143,155)",    
+  "rgb(201,26,9))", 
+  "rgb(200,112,160)",  
+  "rgb(85,165,175)", 
+  "rgb(146,57,120)",  
+  "rgb(32, 50, 176)"
+]; 
 let blockTimeouts = [];
 
 function createBlocks() {
@@ -54,6 +63,7 @@ function createBlocks() {
       const block = document.createElement('div');
       block.classList.add('block');
     
+      block.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
       // Bereken de positie van het blok op basis van de index
       const left = (blockIndex % cols) * blockSize;
       const top = Math.floor(blockIndex / cols) * blockSize;
