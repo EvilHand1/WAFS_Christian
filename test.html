@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="style.css">
+    <script src="ButtonTest.js"type="module"></script>
 </head>
 <body>
     <h1>lego</h1>
-    <script src="ButtonTest.js"></script>
+    <h2>Christian van Drunen</h2>
+
     <div class="InformationButtons" id="AllButtons">
-        <button id="myButton" onclick="MyInformation()">set 0 <br> Help</button>
-        <button id="myButton2" onclick="Leerdoel1()">set 1 <br> kiip</button>
-        <button id="myButton3" onclick="Leerdoel2()">set 2 <br> bob</button>
+        <button id="MeInformationButton">set 0<br>Me</button>
+        <button id="LearningGoalsButton">set 1<br>Leerdoel</button>
+        <button id="HobbyButton">set 2 <br> hobby</button>
     </div>
  
-    <button id="removeBlocks" onclick="removeBlocks()" class = "hide">Remove Blocks</button>
-    <div id="WhoAmIText" class = "hide">
+    <button id="removeBlocks"class="hide">Back</button>
+    <div id="WhoAmIText"class="hide">
         <p>blablabla</p>
       </div>
     
-      <img src="images/piece-by-piece-no-background.png" alt="error 404" id="LegoImage">
+      <img src="images/piece-by-piece-no-background.png"alt="error 404"id="LegoImage">
       <div id="block-container"></div>
     
 </body>

@@ -1,15 +1,22 @@
+const baseURL = "https://fdnd.directus.app/items/person/?filter={%22id%22:196}";
+const response = await fetch(baseURL);
+const lookForMyData = await response.json();
+
+
 function MyInformation(){
   var myInformation = document.getElementById("WhoAmIText");
-  myInformation.innerHTML = "Hello, my name is Christian and I am horrible at coding";
+  myInformation.innerHTML = "Hallo, mijn naam is " + lookForMyData.data[0].name + " en ik vreselijk in coderen. " + lookForMyData.data[0].bio;
 myFunction();
+
 }
 
-function Leerdoel1(){
+function LearningGoals(){
   var myInformation = document.getElementById("WhoAmIText");
   myInformation.innerHTML = "dus mijn eerste leerdoel is om css te leren";
   myFunction();
 }
-function Leerdoel2(){
+
+function Hobbies(){
   var myInformation = document.getElementById("WhoAmIText");
   myInformation.innerHTML = "En mijn tweede is om te janken";
   myFunction();
@@ -32,6 +39,7 @@ function myFunction() {
     
   }
 
+  
 let blockTimeouts = [];
 
 function createBlocks() {
@@ -83,3 +91,16 @@ function createBlocks() {
     }
 
   
+   
+
+let meEvent = document.getElementById("MeInformationButton");
+meEvent.addEventListener('click', MyInformation);
+
+let removeBlocksEvent = document.getElementById("removeBlocks");
+removeBlocksEvent.addEventListener('click', removeBlocks)
+
+let leerdoelEvent = document.getElementById("LearningGoalsButton");
+leerdoelEvent.addEventListener('click', LearningGoals);
+
+let HobbyEvent = document.getElementById("HobbyButton");
+HobbyEvent.addEventListener('click', Hobbies);
